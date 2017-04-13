@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+  before_action :authorize
   before_action :set_member, only: [:show, :edit, :update, :destroy]
 
   # GET /members
@@ -63,6 +64,7 @@ class MembersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+  
     def set_member
       @member = Member.find(params[:id])
     end
