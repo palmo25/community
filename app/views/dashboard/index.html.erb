@@ -1,3 +1,11 @@
 
 
 <h1 class="text-center">DASHBOARD</h1>
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+<%= javascript_include_tag "chartkick" %>
+<div class="">
+  <%= pie_chart Member.group(:city).count %>
+</div>
+<div class="">
+  <%= column_chart Member.group(:study_type).count %>
+</div>
