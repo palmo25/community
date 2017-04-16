@@ -35,6 +35,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'bootstrap_form'
 gem 'tether-rails'
 gem "chartkick"
+gem 'groupdate'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
