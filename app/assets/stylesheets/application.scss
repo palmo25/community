@@ -13,10 +13,12 @@
  */
 @import "bulma";
 @import "admin.scss";
+@import "members.scss";
+@import "dashboard.scss";
 
-.form-title{
+#new-form-title {
   color: green;
 }
-.card{
+.card {
   margin-top: 50px;
 }

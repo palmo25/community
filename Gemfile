@@ -7,7 +7,8 @@ end
 
 ruby "2.3.3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.0.rc1'
+# gem 'rails', '~> 5.1.0.rc1'
+gem 'rails', '~> 5.1.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -31,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem "bulma-rails", "~> 0.4.0"
+gem "bulma-rails", "~> 0.4.3"
 gem "chartkick"
 gem 'groupdate'
 # Use Capistrano for deployment

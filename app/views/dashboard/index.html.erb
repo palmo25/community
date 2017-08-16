@@ -1,20 +1,28 @@
+
 <ul class="nav">
   <li class="nav-item mr-auto">
-    <%= link_to 'Members list', members_path, class: "btn btn-primary" %>
+    <%= link_to 'Members list', members_path, class: "button is-warning" %>
   </li>
   <li class="nav-item ">
-      <%= link_to 'Logout', logout_path, class: "btn btn-danger float-right "  %>
+      <%= link_to 'Logout', logout_path, class: "button is-info"  %>
   </li>
 </ul>
-
-<h1 class="text-center">DASHBOARD</h1>
-<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
-<%= javascript_include_tag "chartkick" %>
-<div class="row">
-<div class="col-md-6">
-  <%= pie_chart Member.group(:city).count %>
-</div>
-    <div class="col-md-6">
-      <%= column_chart Member.group(:study_type).count %>
+<div class="content">
+<div class="columns">
+    <div class="column">
+    <h1 id="dashboard-title">DASHBOARD</h1>
     </div>
+  </div>
+    <!-- <div class="content"> -->
+    <div class="columns">
+      <div class="column">
+        <%= pie_chart Member.group(:city).count %>
+      </div>
+    <!-- </div> -->
+    <!-- <div class="content"> -->
+      <div class="column">
+        <%= column_chart Member.group(:study_type).count %>
+      </div>
+      </div>
+    <!-- </div> -->
 </div>
