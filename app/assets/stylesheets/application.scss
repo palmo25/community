@@ -11,13 +11,18 @@
  * It is generally better to create a new file per style scope.
  *
  */
+
+
+$seagreen: #20B2AA;
+$primary: $seagreen;
+
 @import "bulma";
 @import "admin.scss";
 @import "members.scss";
 @import "dashboard.scss";
 
 #new-form-title {
-  color: green;
+  color: $seagreen;
 }
 .card {
   margin-top: 50px;
